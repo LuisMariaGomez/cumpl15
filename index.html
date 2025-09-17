@@ -9,6 +9,7 @@
   <!-- JS -->
   <script src="./javascript/main.js" defer></script>
   <script src="./javascript/lotties.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
 </head>
@@ -18,7 +19,7 @@
     <div class="relleno"></div>
     <div class="hero-text">
       <h1>¿Listo para la fiesta?</h1>
-      <div class="arrow" id="enter"><img src="./img/boton.gif" alt="Enter"></div>
+      <div class="arrow" id="enter"></div>
     </div>
   </div>
 
@@ -34,7 +35,7 @@
         <img src="./img/slide3.jpg" alt="Slide 3">
       </div>
       <div class="carousel_title">
-        <h2>Lu B.</h2>
+        <h2>Lu Burckwardt</h2>
         <h3>¡Cumplo 15!</h3>
         <p>y quiero compartirlo con vos</p>
         <img src="./img/Down.gif" alt="Decoración">
@@ -43,69 +44,99 @@
     
     <div class="section_corazon_texto">
       <div class="corazon" id="corazon"></div>
-        <p>
-          Estos 15 son un sueño que se vuelve realidad, y compartirlos con ustedes es lo mejor de todo.
-        </p>
-      </div>
-  </div>
-
-  <div class="fecha_brindis">
-
-    <div class="section_countdown">
-      <!-- <div id="disco" class="disco"></div> -->
-      <h2>Agenda la fecha</h2>
-      <p>Sabado 15 de Noviembre</p>
-      <div id="countdown">
-        <div class="time-box">
-          <span id="days">0</span>
-          <div class="label">DÍAS</div>
-        </div>
-        <div class="separator">:</div>
-        <div class="time-box">
-          <span id="hours">0</span>
-          <div class="label">HS</div>
-        </div>
-        <div class="separator">:</div>
-        <div class="time-box">
-          <span id="minutes">0</span>
-          <div class="label">MIN</div>
-        </div>
-        <div class="separator">:</div>
-        <div class="time-box">
-          <span id="seconds">0</span>
-          <div class="label">SEG</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="secction_brindis">
-      <div class="separador_countdown_agenda"></div>
-      <div id="disco" class="disco"></div>
-      <h2>Agenda la fecha</h2>
-      <h3>Brindis</h2>
-      <div class="brindis_info">
-        <div class="brindis_text1">
-          <p>Salon 1 Bomberos</p>
-          <p>Voluntarios Sunchales</p>
-          <p>Tucuman 1148</p>
-        </div>
-        <div class="separador_brindis_v"></div>
-        <div class="brindis_text2">
-          <p>00:00</p>
-          <p>HORAS</p>
-        </div>
-      </div>   
-      <div class="separador_brindis_h"></div>
-      <a>COMO LLEGAR</a> 
+      <p>
+        Estos 15 son un sueño que se vuelve realidad, y compartirlos con ustedes es lo mejor de todo.
+      </p>
     </div>
 
-  </div>
+    <div class="fecha_brindis">
 
-  <div class="section_dressCode">
+      <div class="section_countdown">
+        <h2>Agenda la fecha</h2>
+        <p>Sabado 15 de Noviembre</p>
+        <div id="countdown">
+          <div class="time-box">
+            <span id="days">0</span>
+            <div class="label">DÍAS</div>
+          </div>
+          <div class="separator">:</div>
+          <div class="time-box">
+            <span id="hours">0</span>
+            <div class="label">HS</div>
+          </div>
+          <div class="separator">:</div>
+          <div class="time-box">
+            <span id="minutes">0</span>
+            <div class="label">MIN</div>
+          </div>
+          <div class="separator">:</div>
+          <div class="time-box">
+            <span id="seconds">0</span>
+            <div class="label">SEG</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="secction_brindis">
+        <div class="separador_countdown_agenda"></div>
+        <div id="disco" class="disco"></div>
+        <h2>Agenda la fecha</h2>
+        <h3>Brindis</h2>
+        <div class="brindis_info">
+          <div class="brindis_text1">
+            <p>Salon 1 Bomberos</p>
+            <p>Voluntarios Sunchales</p>
+            <p>Tucuman 1148</p>
+          </div>
+          <div class="separador_brindis_v"></div>
+          <div class="brindis_text2">
+            <p>00:00</p>
+            <p>HORAS</p>
+          </div>
+        </div>   
+        <div class="separador_brindis_h"></div>
+        <a>COMO LLEGAR</a> 
+      </div>
 
-  </div>
+    </div>
 
-  </div>  
+    <div class="section_albumFotos">
+      <div id="camara" class="camara"></div>
+      <h2>Recuerdos inolvidables</h2>
+      <h3>Galería de recuerdos</h3>
+
+    <!-- Galería -->
+    <div class="gallery">
+      <img src="./img/galerias/1.jpg" alt="Imagen 1" class="lightbox-trigger">
+      <img src="./img/galerias/2.jpg" alt="Imagen 2" class="lightbox-trigger">
+      <img src="./img/galerias/3.jpg" alt="Imagen 3" class="lightbox-trigger">
+      <img src="./img/galerias/2.jpg" alt="Imagen 4" class="lightbox-trigger">
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+
+      <!-- Flechas de navegación -->
+      <span class="lightbox-prev" id="lightbox-prev">&#10094;</span>
+      <span class="lightbox-next" id="lightbox-next">&#10095;</span>
+
+      <img src="" alt="" class="lightbox-content" id="lightbox-content">
+    </div>
+    </div>  
+
+    <div class="section_confirmacion">
+      <div id="asistencia" class="asistencia"></div>
+      <h2>Confirmación de Asistencia</h2>
+      <h3>Tu compañía esta noche es mi mejor regalo</h3>
+      <h3 class="separacion">Gracias por estar presente en este momento tan importante para mí</h3>
+      <h2>Valor de tarjeta</h2>
+      <h3>$00.000 por persona</h3>
+      <p class="separacion">Alias: xxxxxxxxxxxx</p>
+      <a class="boton" href=""><button>CONFIRMAR ASISTENCIA</button></a>
+    </div>
+
+  <script src="./javascript/galeria.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 </body>
 </html>

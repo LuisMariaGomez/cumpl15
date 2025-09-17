@@ -77,16 +77,13 @@ body, html {
 h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: right;
 }
 
 /* Flecha animada */
 .arrow {
   cursor: pointer;
-}
-.arrow img {
-  height: 6rem;
-  animation: bounce 1.5s infinite;
+  width: 20%;
 }
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
@@ -347,7 +344,6 @@ h1 {
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
   width: 30%;
   margin-top: 3rem;
 }
@@ -360,13 +356,289 @@ h1 {
 
 .brindis_text1{
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .brindis_text2{
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;}
+
+.section_albumFotos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.camara{
+  max-width: 10rem;
 }
 
-.section_dressCode{
-  height: 40rem;
+/* Galeria */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  max-width: 20rem;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  margin-top: 3%;
+  display: block;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  color: #49739B; /* color que usas en tu diseño */
+}
+
+/* Asistencia */
+.section_confirmacion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  background-color: #132b43;
+}
+.asistencia{
+  max-width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.section_confirmacion h2{
+  font-size: 2em;
+  color: #fdfdfd;
+}
+.section_confirmacion h3{
+  font-size: 1em;
+  color: #fdfdfd;
+  font-weight: lighter;
+}
+.separacion{
+  margin-bottom: 3rem;
+}
+.boton{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+}
+.boton button{
+  width: 20%;
+  height: 3rem;
+  border-radius: 1rem;
+  background-color: #fdfdfd;
+  border: none;
+  font-weight: bold;
+
+  font-size: 1em;
+  color: #132b43;
+}
+/* mobiles */
+
+@media screen and (max-width: 959px)  {
+  /* INICIO */
+  .relleno{
+    width: 30%;
+  }
+  .hero-text{
+    width: 70%;
+  }
+  .arrow{
+    width: 50%;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+  }
+
+  /* corazon */
+
+  .corazon{
+    max-width: 10rem;
+  }
+  .section_corazon_texto p{
+    font-size: 1.2em;
+  }
+
+  /* Carousel */
+  .carousel_title{
+    padding: 1rem;
+  }
+  .carousel_title h2{
+    font-size: 1em;
+  }
+  .carousel_title h3{
+    font-size: 2em;
+  }
+  .carousel_title img{
+    height: 3rem;
+  }
+  .corazon{
+    max-width: 5rem;
+  }
+  .corazon p{
+    font-size: 8em;
+  }
+
+  /* inicio */
+
+  .carousel_title p{
+    font-size: .8em;
+  }
+
+  /* Countdown */
+  .section_countdown{
+    padding: 0rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  #days{
+    font-size: 1em;
+  }
+  #hours{
+    font-size: 1em;
+  }
+  #minutes{
+    font-size: 1em;
+  }
+  #seconds{
+    font-size: 1em;
+  }
+  .separator{
+    font-size: 1.2em;
+  }
+  .label{
+    font-size: 1em;
+  }
+  .section_countdown p{
+    font-size: 2em;
+  }
+
+
+  /* brindis */
+
+  .disco{
+    max-width: 8rem;
+  }
+  .secction_brindis{
+    padding-top: 2rem;
+  }
+  .separador_countdown_agenda{
+    width: 20rem;
+  }
+  .separador_brindis_h{
+    width: 20rem;
+  }
+  .brindis_info{
+    width: 100%;
+  }
+  /* .brindis_text1{
+  }
+  .brindis_text2{
+  } */
+
+  .camara{
+    max-width: 30%;
+  }
+  /* Galeria */
   
+  .gallery {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: nowrap;           /* no salta de línea */
+    overflow-x: auto;            /* scroll horizontal */
+    -webkit-overflow-scrolling: touch; /* suave en iOS */
+    gap: 10px;                   /* separación entre imágenes */
+    scroll-snap-type: x mandatory; /* opcional para que encajen */
+  }
+
+  .gallery img {
+    flex: 0 0 auto;             /* cada imagen ocupa ancho fijo */
+    max-width: 80%;             /* más grandes en mobile */
+    height: auto;
+    scroll-snap-align: center;   /* opcional para centrado */
+  }
+
+  .lightbox-content {
+    margin-top: 40%;
+  }
+  
+  .lightbox-prev,
+  .lightbox-next {
+    margin-top: 50%;
+    color: #49739B;
+
+  }
+
+  /* Asistencia */
+
+  .asistencia{
+    max-width: 30%;
+    margin-bottom: 2rem;
+  }
+
+  .section_confirmacion{
+  text-align: center;
+  }
+  .boton button{
+  width: 60%;
+  height: 3rem;
+  font-size: .7em;
+  padding: .2rem;
+}
 }
