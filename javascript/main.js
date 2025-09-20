@@ -1,17 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hero = document.getElementById("hero");
   const arrow = document.getElementById("enter");
-  const main = document.getElementById("main");
 
   arrow.addEventListener("click", () => {
-    // Fade out del hero
     hero.classList.add("hidden");
 
-    // Habilitar scroll en el body una vez desaparece
     setTimeout(() => {
       hero.style.display = "none";
-      document.body.style.overflow = "auto"; // ya se puede scrollear
-    }, 1000); // mismo tiempo que la transición del CSS
+      document.body.style.overflow = "auto";
+    }, 2000);
   });
 });
 
